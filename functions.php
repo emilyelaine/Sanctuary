@@ -48,10 +48,12 @@ function sanctuary_setup() {
 	 */
 	//add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// Register all menu navs
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'sanctuary' ),
 	) );
+	register_nav_menus( 'secondary-menu' , 'Footer Navigation' );
+	
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
