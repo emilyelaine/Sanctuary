@@ -944,6 +944,26 @@ div.site-branding {
 	margin: 0 0 1.5em;
 }
 
+.content-area	{
+	width: 100%
+	background-color: white;
+	height: auto;
+	margin-top: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cabin-content	{
+	float: right;
+	width: 40%;
+	padding: 20px;
+}
+
+div.cabin-gallery	{
+	float: left;
+	width: 60%;
+}
+
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
@@ -984,6 +1004,7 @@ social-media-links li a {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: auto;
+	clear: both;
 }
 
 

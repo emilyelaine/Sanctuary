@@ -1,3 +1,8 @@
+<?php 
+/**
+Template Name Posts: Studio Cabin Posts
+*/
+?>
 
 <?php get_header(); ?>
 
