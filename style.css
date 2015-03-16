@@ -47,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 1.0 Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: 'open sans', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -263,6 +263,114 @@ th {
 }
 
 /*--------------------------------------------------------------
+1.2 Background
+--------------------------------------------------------------*/
+
+section img	{
+	margin-bottom: -235px;
+
+}
+
+#imgheadline1	{
+	font-family: 'arvo', serif;
+	color: white;
+	font-size: 2em;
+	position: relative;
+	bottom: 125px;
+	padding-left: 60%;
+
+}
+
+#imgdescription1	{
+	font-family: 'open sans condensed', sans-serif;
+	color: white;
+	font-size: 2.5em;
+	position: relative;
+	bottom: 195px;
+	padding-left: 75%;
+
+	
+}
+#imgheadline2	{
+	font-family: 'arvo', serif;
+	color: white;
+	font-size: 2em;
+	position: relative;
+	bottom: 125px;
+	padding-left: 30%;
+
+}
+
+#imgdescription2	{
+	font-family: 'open sans condensed', sans-serif;
+	color: white;
+	font-size: 2.5em;
+	position: relative;
+	bottom: 195px;
+	padding-left: 20%;	
+}
+
+#imgheadline3	{
+	font-family: 'arvo', serif;
+	color: black;
+	font-size: 2em;
+	position: relative;
+	bottom: 125px;
+	padding-left: 50%;
+
+}
+
+#imgdescription3	{
+	font-family: 'open sans condensed', sans-serif;
+	color: black;
+	font-size: 2.5em;
+	position: relative;
+	bottom: 195px;
+	padding-left: 55%;
+
+	
+}
+#imgheadline4	{
+	font-family: 'arvo', serif;
+	color: white;
+	font-size: 2em;
+	position: relative;
+	bottom: 125px;
+	padding-left: 60%;
+
+}
+
+#imgdescription4	{
+	font-family: 'open sans condensed', sans-serif;
+	color: white;
+	font-size: 2.5em;
+	position: relative;
+	bottom: 195px;
+	padding-left: 40%;
+	
+}
+#imgheadline5	{
+	font-family: 'arvo', serif;
+	color: white;
+	font-size: 2em;
+	position: relative;
+	bottom: 125px;
+	padding-left: 6%;
+
+}
+
+#imgdescription5	{
+	font-family: 'open sans condensed', sans-serif;
+	color: white;
+	font-size: 2.5em;
+	position: relative;
+	bottom: 195px;
+	padding-left: 5%;
+	
+}
+
+/
+*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
 body,
@@ -341,15 +449,30 @@ big {
 	font-size: 125%;
 }
 
-header h1 {
+.site-title {
 	font-family: 'arvo', serif;
-	font-size: 24px;
-	
+	font-size: 5em;
+	color: white;
+	position: relative;
+	letter-spacing: 3px;
+	line-height: 1.2em;
+	margin: 0 0 0 60px;
 }
 
-header h2	{
+
+h1 a:hover, h1 a:visited, h1 a:active, h1 a:link	{
+	color: white;
+}
+
+.site-description	{
 	font-family: 'open sans condensed', sans-serif;
-	font-size: 18px;
+	position: relative;
+	font-size: 1.5em;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	line-height: .5em;
+	margin: -5px 0 0 60px;
 }
 
 /*--------------------------------------------------------------
@@ -431,9 +554,13 @@ table {
 
 nav.site-navigation 	{
 	background: black;
-	opacity: 80%;
+	opacity: 60%;
 	width: 100%;
-	height: 75px;
+}
+
+#masthead a	{
+	color: white;
+	text-decoration: none;
 }
 
 
@@ -546,8 +673,16 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+ 	width: 100%;
+	text-transform: uppercase;
+	padding: 10px 20px 10px 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: relative;
+	top: 45px;
+	font-family: 'arvo', serif;
+	font-size: .7em;
+	
 }
 
 .main-navigation ul {
@@ -557,8 +692,9 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
+	float: right;
 	position: relative;
+	padding: 20px;
 }
 
 .main-navigation a {
@@ -752,6 +888,30 @@ a:active {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+section img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+#main {
+	position: absolute;
+	z-index: 1;
+}
+
+#masthead {
+	position: fixed;
+	width: 100%;
+}
+
+div.site-branding {
+	position: absolute;
+	z-index: 10;
+
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -802,6 +962,31 @@ a:active {
 .bypostauthor {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+10.3 Footer
+--------------------------------------------------------------*/
+
+
+social-media-links li {
+	display: inline-block;
+	float: left;
+	padding: 20px;
+}
+
+social-media-links li a {
+	display: block;
+	text-decoration: none;
+}
+	
+
+.site-footer	{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: auto;
+}
+
+
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
